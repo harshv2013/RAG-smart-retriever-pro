@@ -72,8 +72,8 @@ A comprehensive, scalable Retrieval-Augmented Generation (RAG) system that combi
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/smart-retriever-pro.git
-cd smart-retriever-pro
+git clone https://github.com/harshv2013/RAG-smart-retriever-pro
+cd RAG-smart-retriever-pro
 
 # Create environment file
 cp .env.example .env
@@ -258,74 +258,32 @@ python scripts/setup_database.py
 
 ### Environment Variables
 
-Create a `.env` file in the project root:
+Create a `.env` file in the project root similar to .env.example.
 
-```env
-# Azure OpenAI
-AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/
-AZURE_OPENAI_API_KEY=your-api-key-here
-AZURE_OPENAI_API_VERSION=2024-12-01-preview
-AZURE_OPENAI_DEPLOYMENT=gpt-4
-AZURE_OPENAI_EMBEDDING_DEPLOYMENT=text-embedding-3-small
-AZURE_OPENAI_EMBEDDING_DIMENSION=1536
-
-# Database
-DATABASE_URL=postgresql://raguser:ragpass@localhost:5432/smartretriever
-
-# Redis
-REDIS_HOST=localhost
-REDIS_PORT=6379
-REDIS_DB=0
-
-# FAISS
-FAISS_INDEX_TYPE=Flat  # Flat, IVF, HNSW, PQ
-FAISS_INDEX_PATH=data/faiss_index
-FAISS_NLIST=100
-FAISS_NPROBE=10
-
-# Chunking
-CHUNK_SIZE=500
-CHUNK_OVERLAP=50
-CHUNKING_STRATEGY=semantic  # semantic, fixed, recursive
-
-# RAG
-TOP_K_RESULTS=5
-SIMILARITY_THRESHOLD=0.3
-TEMPERATURE=0.7
-MAX_TOKENS=800
-
-# Performance
-BATCH_SIZE_EMBEDDING=10
-DB_POOL_SIZE=20
-DB_MAX_OVERFLOW=40
-
-# Caching
-CACHE_TTL_EMBEDDING=86400  # 24 hours
-CACHE_TTL_RETRIEVAL=3600   # 1 hour
-CACHE_TTL_RESPONSE=1800    # 30 minutes
-
-# Logging
-LOG_LEVEL=INFO
-ENABLE_METRICS=true
-ENABLE_QUERY_LOGGING=true
-```
 
 ### Local vs Docker Configuration
 
-**Important:** In `src/config.py`, you need to uncomment the appropriate database and Redis settings:
+**Important:** In `.env`, you need to uncomment the appropriate database and Redis settings:
 
 **For Local Development:**
 ```python
-# Uncomment these lines in config.py:
-# DATABASE_URL = "postgresql://raguser:ragpass@localhost:5432/smartretriever"
-# REDIS_HOST = "localhost"
+# Uncomment these lines in .env:
+#DATABASE_URL=postgresql+psycopg2://postgres:test123@localhost:5433/smartretriever
+
+# REDIS_HOST=localhost
+# REDIS_PORT=6379
+# REDIS_DB=0
+# REDIS_PASSWORD=test@123  # Optional
 ```
 
 **For Docker:**
 ```python
-# Uncomment these lines in config.py:
-# DATABASE_URL = "postgresql://raguser:ragpass@postgres:5432/smartretriever"
-# REDIS_HOST = "redis"
+# Uncomment these lines in .env:
+# DATABASE_URL=postgresql+psycopg2://postgres:postgres@postgres:5432/smartretriever
+
+# REDIS_HOST=redis
+# REDIS_PORT=6379
+# REDIS_DB=0
 ```
 
 ### Choosing FAISS Index Type
@@ -743,23 +701,6 @@ streamlit run ui/app.py
 - [ ] Configure CORS for production
 - [ ] Set up HTTPS/SSL for Streamlit UI
 
-### Environment-Specific Configs
-
-**Development:**
-```bash
-# Use local database and Redis
-# In config.py, uncomment:
-# DATABASE_URL = "postgresql://raguser:ragpass@localhost:5432/smartretriever"
-# REDIS_HOST = "localhost"
-```
-
-**Docker/Production:**
-```bash
-# Use containerized database and Redis
-# In config.py, uncomment:
-# DATABASE_URL = "postgresql://raguser:ragpass@postgres:5432/smartretriever"
-# REDIS_HOST = "redis"
-```
 
 ### Scaling the Application
 
@@ -987,7 +928,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```
 MIT License
 
-Copyright (c) 2024 [Your Name]
+Copyright (c) 2026 Harsh Vardhan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -1011,8 +952,8 @@ in the Software without restriction...
 - [FAISS Indexing](https://medium.com/...) - Production FAISS patterns
 
 ### Contributors
-- [Your Name](https://github.com/yourusername) - Initial work
-- [Contributors](https://github.com/yourusername/smart-retriever-pro/contributors)
+- [Harsh Vardhan](https://github.com/harshv2013) - Initial work
+- [Contributors](https://github.com/harshv2013/RAG-smart-retriever-pro/contributors)
 
 ---
 
@@ -1050,23 +991,16 @@ in the Software without restriction...
 
 ## 📞 Contact & Support
 
-- **Issues:** [GitHub Issues](https://github.com/yourusername/smart-retriever-pro/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/yourusername/smart-retriever-pro/discussions)
-- **Email:** your.email@example.com
-- **Twitter:** [@yourhandle](https://twitter.com/yourhandle)
+- **Issues:** [GitHub Issues](https://github.com/harshv2013/RAG-smart-retriever-pro/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/harshv2013/RAG-smart-retriever-pro/discussions)
+- **Email:** harsh2013@gmail.com
+- **Linkedin:** https://www.linkedin.com/in/harsh-vardhan-60b6aa106/ 
 
----
-
-## 🌟 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/smart-retriever-pro&type=Date)](https://star-history.com/#yourusername/smart-retriever-pro&Date)
-
----
 
 <div align="center">
 
 **If you find this project helpful, please consider giving it a ⭐!**
 
-Made with ❤️ by [Your Name](https://github.com/yourusername)
+Made with ❤️ by [Harsh Vardhan](https://github.com/harshv2013/)
 
 </div>
