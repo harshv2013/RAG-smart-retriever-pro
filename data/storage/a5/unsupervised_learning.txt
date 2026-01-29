@@ -1,0 +1,9 @@
+Unsupervised learning works with unlabeled data.
+The goal is to discover hidden patterns or structures.
+
+Common techniques include:
+- Clustering (K-Means, Hierarchical clustering)
+- Dimensionality reduction (PCA, t-SNE)
+- Association rule mining
+
+It is often used in customer segmentation and anomaly detection.

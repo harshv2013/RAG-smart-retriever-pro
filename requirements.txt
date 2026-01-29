@@ -1,0 +1,52 @@
+# Core RAG Dependencies
+openai>=1.12.0
+python-dotenv>=1.0.0
+numpy>=1.24.0
+tiktoken>=0.5.0
+
+# Vector Database
+faiss-cpu>=1.7.4
+# For GPU support (uncomment if you have CUDA):
+# faiss-gpu>=1.7.4
+
+# PostgreSQL
+psycopg2-binary>=2.9.9
+sqlalchemy>=2.0.0
+alembic>=1.13.0
+
+# Redis Cache
+redis>=5.0.0
+hiredis>=2.3.0
+
+# Text Processing
+nltk>=3.8.1
+sentence-transformers>=2.2.2
+langchain-text-splitters>=0.0.1
+
+# Utilities
+loguru>=0.7.2
+python-multipart>=0.0.6
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Monitoring & Performance
+prometheus-client>=0.19.0
+colorama>=0.4.6
+
+# Development & Testing
+pytest>=7.4.3
+pytest-asyncio>=0.21.1
+pytest-cov>=4.1.0
+black>=23.12.0
+flake8>=6.1.0
+
+# Optional: Web Interface
+fastapi>=0.108.0
+uvicorn>=0.25.0
+
+# File Processing
+PyPDF2>=3.0.1
+python-magic>=0.4.27
+
+# UI
+streamlit>=1.53.1

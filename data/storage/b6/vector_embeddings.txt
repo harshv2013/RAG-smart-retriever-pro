@@ -1,0 +1,7 @@
+Vector embeddings represent text as numerical vectors in high-dimensional space.
+They capture semantic meaning rather than exact word matches.
+
+Embeddings allow similarity search using cosine similarity or Euclidean distance.
+They are essential for retrieval-augmented generation (RAG) systems.
+
+Popular embedding models are provided by OpenAI, Cohere, and SentenceTransformers.

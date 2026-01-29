@@ -1,0 +1,9 @@
+Machine learning is a subset of artificial intelligence that enables systems to learn from data.
+Instead of being explicitly programmed, models identify patterns and make predictions.
+
+The three main categories of machine learning are:
+- Supervised learning
+- Unsupervised learning
+- Reinforcement learning
+
+Machine learning is widely used in recommendation systems, fraud detection, and image recognition.

@@ -1,0 +1,11 @@
+Supervised learning uses labeled data to train models.
+Each training example consists of an input and a known output.
+
+Common supervised learning algorithms include:
+- Linear Regression
+- Logistic Regression
+- Decision Trees
+- Support Vector Machines
+- Neural Networks
+
+Evaluation metrics include accuracy, precision, recall, and F1-score.

@@ -1,0 +1,9 @@
+Natural Language Processing (NLP) focuses on enabling computers to understand human language.
+
+Key NLP tasks include:
+- Text classification
+- Named entity recognition
+- Sentiment analysis
+- Machine translation
+
+Modern NLP systems rely heavily on transformer-based models.

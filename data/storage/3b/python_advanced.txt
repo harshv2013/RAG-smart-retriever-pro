@@ -1,0 +1,7 @@
+Advanced Python concepts include decorators, generators, context managers, and metaclasses.
+
+Decorators allow modification of functions without changing their source code.
+Generators provide lazy iteration using the yield keyword, making them memory efficient.
+
+Context managers manage resources using the with statement, commonly used for file handling.
+Metaclasses control class creation and are used in advanced frameworks.

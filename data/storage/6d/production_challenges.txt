@@ -1,0 +1,10 @@
+Deploying RAG systems in production introduces several challenges.
+
+These include:
+- Latency caused by embedding generation
+- Vector database scaling
+- Cache invalidation
+- Data freshness
+- Monitoring hallucinations
+
+Robust logging, caching, and document versioning are essential for reliability.

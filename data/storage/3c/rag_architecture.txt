@@ -1,0 +1,10 @@
+Retrieval-Augmented Generation (RAG) combines information retrieval with language models.
+
+The workflow includes:
+1. Document ingestion and chunking
+2. Embedding generation
+3. Vector storage in FAISS or similar databases
+4. Retrieval of relevant chunks
+5. Answer generation using retrieved context
+
+RAG reduces hallucinations and improves factual accuracy.

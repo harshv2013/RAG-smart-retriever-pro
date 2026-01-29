@@ -1,0 +1,6 @@
+Deep learning is a subset of machine learning based on artificial neural networks with multiple layers.
+
+Deep learning models automatically learn feature representations.
+Popular architectures include Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs).
+
+Deep learning has achieved state-of-the-art results in computer vision, speech recognition, and NLP.
