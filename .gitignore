@@ -134,6 +134,7 @@ pip-log.txt
 # Documentation builds
 docs/_build/
 site/
+
 documents/
 
 # MyPy
