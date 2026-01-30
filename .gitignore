@@ -50,7 +50,7 @@ venv.bak/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
-*.ipynb
+# *.ipynb
 
 # PyCharm
 .idea/
@@ -134,6 +134,7 @@ pip-log.txt
 # Documentation builds
 docs/_build/
 site/
+documents/
 
 # MyPy
 .mypy_cache/

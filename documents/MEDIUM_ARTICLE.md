@@ -575,38 +575,6 @@ for chunk in stream_response(question):
     print(chunk, end='', flush=True)
 ```
 
----
-
-## Next Steps
-
-Want to build this yourself? Here's the roadmap:
-
-**Phase 1: Basic RAG** (Week 1)
-- ✅ In-memory embeddings
-- ✅ Simple retrieval
-- ✅ GPT generation
-
-**Phase 2: Production Core** (Week 2)
-- ✅ PostgreSQL integration
-- ✅ FAISS vector search
-- ✅ Redis caching
-
-**Phase 3: Optimization** (Week 3)
-- ✅ Batch processing
-- ✅ Connection pooling
-- ✅ Error handling
-
-**Phase 4: Monitoring** (Week 4)
-- ✅ Logging
-- ✅ Metrics
-- ✅ Alerts
-
-**Phase 5: Scale** (Ongoing)
-- 🔄 Horizontal scaling
-- 🔄 Load balancing
-- 🔄 Multi-region
-
----
 
 ## Conclusion
 
